@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    IMAGE_REPO_NAME: "skuser10-products"
+    _PROJECT_NAME: "skuser10-products"
 
 phases:
   install:
@@ -93,6 +93,6 @@ phases:
                       periodSeconds: 5
                       failureThreshold: 5
           EOF
-cache:
-  paths:
-    - '/root/.m2/**/*'
+#cache:
+#  paths:
+#    - '/root/.m2/**/*'
